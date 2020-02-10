@@ -4,6 +4,7 @@ X <- seq(24, 53, 1)
 Y <- -1197 + 219 * X + epsilon
 
 df <- data.frame(X, Y)
+write.csv(df, "data.csv", row.names=FALSE)
 
 # Plot
 library("ggplot2")
